@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "Preferd Language Cookie";
+}
+
+<h1>Preferd Language Cookie</h1>
+
+<p>Save so i don't need to set it every time i visit the page'</p>
+
+<p>Current Language:ViewBag.Lang</p>
+
+<form asp-action="SetLanguageCookie" method="post">
+
+    <select name="Lang">
+
+        <option value="swe">SWE</option>
+        <option value="en">Eng</option>
+        <option value="ro">Ro</option>
+    
+    </select>
+    <button type="submit">Save language preference</button>
+
+</form>
